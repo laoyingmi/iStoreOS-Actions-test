@@ -11,11 +11,11 @@
 #
 
 # 修改openwrt登陆地址,把下面的 192.168.100.1 修改成你想要的就可以了
-sed -i 's/192.168.1.1/192.168.100.1/g' package/base-files/files/bin/config_generate
+# sed -i 's/192.168.1.1/192.168.100.1/g' package/base-files/files/bin/config_generate
 
 # 加入作者信息
 sed -i "s/DISTRIB_DESCRIPTION='*.*'/DISTRIB_DESCRIPTION='iStoreOS-'/g"  package/base-files/files/etc/openwrt_release
-sed -i "s/DISTRIB_REVISION='*.*'/DISTRIB_REVISION='Master Zhao'/g" package/base-files/files/etc/openwrt_release
+sed -i "s/DISTRIB_REVISION='*.*'/DISTRIB_REVISION='MasterZhao'/g" package/base-files/files/etc/openwrt_release
 
 # 修改子网掩码
 # sed -i 's/255.255.255.0/255.255.0.0/g' package/base-files/files/bin/config_generate
